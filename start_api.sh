@@ -17,10 +17,15 @@ then
 	echo "删除$nohup_file"
 fi
 
+# API_TOKEN
+export API_TOKEN_SECRET='nmH0Nx4irTNIwSmp'
+
+# MYSQL
 export ONTHEWAY_MYSQL_USERNAME='root'
 export ONTHEWAY_MYSQL_PASSWORD='123456'
 export ONTHEWAY_MYSQL_URL='jdbc:mysql://db.dev.jicu.vip:3306/on_the_way?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8'
 
+# SPRING ENV
 SPRING_PROFILES_ACTIVE=production
 read -p "请输入环境变量：" profile
 echo "输入的环境变量为：$profile"
