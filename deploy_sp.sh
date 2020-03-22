@@ -22,11 +22,14 @@ shopt -u expand_aliases
 echo '[end] cd way-admin-shop...'
 
 echo '[start] npm install...'
-npm install
+cnpm i
+#npm install --unsafe-perm
+#yarn
 echo '[end] npm install...'
 
 echo '[start] npm run build...'
 npm run build
+#yarn build
 echo '[end] npm run build...'
 
 echo '[start] 部署到/apps/web/sp'
